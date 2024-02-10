@@ -8,7 +8,6 @@
   "host": "https://cse-341-project2-qba9.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
