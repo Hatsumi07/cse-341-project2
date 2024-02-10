@@ -1,13 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Contacts API",
-    "description": "Temple API",
+    "title": "Hollywood API",
+    "description": "API with info about mmovies and actors",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-project2-qba9.onrender.com",
+  "host": "localhost:8083",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -17,6 +18,16 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
