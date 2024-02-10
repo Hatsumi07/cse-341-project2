@@ -5,10 +5,9 @@
     "description": "API with info about mmovies and actors",
     "version": "1.0.0"
   },
-  "host": "localhost:8083",
+  "host": "https://cse-341-project2-qba9.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
