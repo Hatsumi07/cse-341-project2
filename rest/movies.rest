@@ -1,0 +1,33 @@
+// LOCALHOST
+
+### Get movies
+GET http://localhost:8083/movies
+
+### Get movies by id
+GET http://localhost:8083/movies/65c4f47af8adf94bb40ab02
+
+### Add a new movie
+POST http://localhost:8083/movies
+Content-Type: application/json
+
+{
+   "movieName": "Star Wars",
+    "director": "George Lucas",
+    "year": 1977,
+    "country": "U.S.A."
+}
+
+### Update movie
+PUT http://localhost:8083/movies/65c4f47af38adf94bb30ab01
+Content-Type: application/json
+
+{
+    "movieName": "Willow",
+    "director": "Ron Howard",
+    "year": 1988,
+    "country": "U.S.A."  
+}
+
+
+### Delete movie
+DELETE http://localhost:8083/movies/65c714bc7c44edf46b691188

@@ -1,0 +1,32 @@
+//LOCALHOST
+
+### Get actors
+GET http://localhost:8083/actors
+
+### Get actors by id
+GET http://localhost:8083/actors/65c663266f97f686b0715a20
+
+### Add new actor
+POST http://localhost:8083/actors
+Content-Type: application/json
+
+{
+    "firstName": "Daisy",
+    "lastName": "Ridley",
+    "age": 31,
+    "birthday": "1992-04-10"
+}
+
+### Update actor
+PUT http://localhost:8083/actors/65c6623efb8db0d4ea7d6474
+Content-Type: application/json
+
+{
+   "firstName": "Winona",
+    "lastName": "Ryder",
+    "age": 52,
+    "birthday": "1971-10-29"
+}
+
+### Delete actor
+DELETE http://localhost:8083/actors/65c78adb6c2b689f4ba24530
