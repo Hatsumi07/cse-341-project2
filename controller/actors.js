@@ -42,6 +42,7 @@ const getSingle = async (req, res) => {
 
 const createActor = async(req, res) => {
     // #swagger.tags=["Actors"]
+    console.log("reaches create actor");
     const actor = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,

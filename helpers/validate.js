@@ -2,8 +2,7 @@ const { body, validationResult } = require("express-validator");
 
 const movieValidator = [
     body("movieName", "Movie is required")
-    .exists()
-    .isEmail(),
+    .exists(),
     body("director", "director is required")
     .exists(),
     body("year", "year is required")

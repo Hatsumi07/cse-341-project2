@@ -22,7 +22,6 @@ app
   .use(cors({ origin: "*"}))
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
-  .use("/", require("./routes"))
   .use(session({
     secret: "secret" ,
     resave: false ,
@@ -44,7 +43,8 @@ app
       "GET, POST, PUT, PATCH, DELETE, OPTIONS"
     );
     next();
-  });
+  })
+  .use("/", require("./routes"));
 
 passport.use(new GithubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID,
